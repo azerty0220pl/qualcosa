@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Permanent Marker';
+    src: url('./assets/PermanentMarker-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Courgette';
+    src: url('./assets/Courgette-Regular.ttf') format('truetype');
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,4 +17,28 @@
 body {
     width: 100%;
     min-width: 320px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Permanent Marker';
+}
+
+p, a {
+    font-family: 'Courgette';
+}
+
+.black {
+    color: #000;
+}
+
+.blue {
+    color: #0062F5;
+}
+
+.yellow {
+    color: #ffeeaaff;
+}
+
+.pink {
+    color: #D600AB;
 }
