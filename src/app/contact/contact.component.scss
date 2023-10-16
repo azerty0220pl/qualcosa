@@ -1,0 +1,50 @@
+section {
+    height: 100vh;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 0.5rem;
+        
+        width: 50%;
+        min-width: 300px;
+        max-width: 1000px;
+
+        input, textarea {
+            font-family: 'Courgette';
+            padding: 0.25rem;
+            border-radius: 0.25rem;
+            width: 100%;
+
+            border: 1px solid gray;
+
+            &::placeholder {
+                font-family: 'Courgette';
+            }
+        }
+
+        textarea {
+            height: 7rem;
+        }
+
+        button {
+            font-family: 'Courgette';
+            padding: 0.5rem;
+            border-radius: 0.25rem;
+            border: 0;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}

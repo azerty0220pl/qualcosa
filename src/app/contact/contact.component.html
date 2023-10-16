@@ -1,0 +1,17 @@
+<section>
+    <h1 class="pink">Contact us</h1>
+    <p *ngIf="submitted;  else noSubmit">Message sent correctly, we will get back to you soon.</p>
+    <ng-template #noSubmit>
+        <form (ngSubmit)="onSubmit()" #dataForm="ngForm">
+            <input type="text" class="form-control" id="name" placeholder="Name" required [(ngModel)]="model.name"
+                name="name">
+            <input type="text" class="form-control" id="email" placeholder="email@domain.com" required
+                [(ngModel)]="model.email" name="email">
+            <input type="text" class="form-control" id="subject" placeholder="Subject" required
+                [(ngModel)]="model.subject" name="subject">
+            <textarea class="form-control" id="message" placeholder="Message" required [(ngModel)]="model.message"
+                name="message"></textarea>
+            <button type="submit" [disabled]="!dataForm.form.valid">Send</button>
+        </form>
+    </ng-template>
+</section>
