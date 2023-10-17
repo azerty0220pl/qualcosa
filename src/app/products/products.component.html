@@ -1,1 +1,9 @@
-<p>products works!</p>
+<section>
+    <h1 class="pink">Products</h1>
+    <div class="grid">
+        <div class="product" *ngFor="let product of products">
+            <img src={{product.image}} alt="Product image">
+            <p>{{product.name}}</p>
+        </div>
+    </div>
+</section>
