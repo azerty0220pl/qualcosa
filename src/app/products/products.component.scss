@@ -10,7 +10,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     padding: 2rem;
-    gap: 1rem;
+    gap: 3rem;
 }
 
 .product {
@@ -30,19 +30,24 @@ h1 {
     }
 
     p {
-        display: none;
-        position: absolute;
-        bottom: 0.5rem;
-        left: 1rem;
-        color: #757575;
+        text-align: center;
     }
 
-    &:hover img {
-        filter: grayscale(50%) brightness(50%);
-        cursor: pointer;
-    }
-
-    &:hover p {
+    .primary {
         display: block;
+    }
+    
+    .secondary {
+        display: none;
+    }
+
+    &:hover {
+        .primary {
+            display: none;
+        }
+
+        .secondary {
+            display: block;
+        }
     }
 }
